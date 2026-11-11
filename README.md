@@ -72,7 +72,7 @@ These categories overlap, so the counts should not be added together.
 - The top 10 customers account for about **17.3%** of total revenue.
 - The top customer (ID 14646, Netherlands) spent **£280,206.02**.
 - Customer 14911 (EIRE) placed 201 orders, which suggests a frequent buyer.
-- Customer 16446 spent £168,472.50 in only 2 orders, and customer 12346 spent £77,183.60 in 1 order. These are large one-off purchases.
+- Customers 16446 (£168,472.50) and 12346 (£77,183.60) each placed a large order that was cancelled in full shortly afterwards (invoices C581484 and C541433). Because `clean_sales` removes cancellation invoices but keeps the original purchases, their revenue is overstated. Their true net revenue is close to zero.
 
 ### 4. Repeat Purchase
 
@@ -115,6 +115,8 @@ Customers were grouped by the month of their first purchase, then tracked by the
 - **Customer ID only.** Customers are identified by `CustomerID`. One person may have more than one ID, and 135,080 rows without an ID were excluded.
 - **Subjective RFM rules.** Segment definitions are my own choices and different rules would give different segment sizes.
 - **No causal claims.** This analysis describes patterns. It does not show why they happen.
+- **Cancellations not netted.** Cancelled invoices were removed, but the purchases they reversed were kept. Revenue, top customers, and RFM figures may be overstated, especially for customers 16446 and 12346.
+
 
 ## Project Structure
 
