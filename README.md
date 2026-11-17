@@ -146,8 +146,7 @@ Customers are grouped by the month of their first purchase in the data. The quer
 ```
 online-retail-sql-analysis/
 ├── README.md
-├── images/
-│   └── online_retail_dashboard.png
+├── online retail dashboard.png
 ├── results/
 │   ├── 04_monthly_revenue.csv
 │   ├── 05_monthly_growth.csv
