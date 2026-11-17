@@ -6,9 +6,9 @@ This project analyzes about 540,000 transactions from a UK-based online retail d
 
 ## Tableau Dashboard
 
-[View the interactive dashboard on Tableau Public]([YOUR_LINK](https://public.tableau.com:9443/views/OnlineRetailDashboard_17948977583650/OnlineRetailDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
+[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/yanika.benno/viz/OnlineRetailDashboard_17948977583650/OnlineRetailDashboard)
 
-![Online Retail Dashboard](images/online_retail_dashboard.png)
+![Online Retail Dashboard](online%20retail%20dashboard.png)
 
 The dashboard summarizes revenue trend, top countries, and RFM segments from the result files in `results/` (`04`, `06`, `11`). Total gross revenue is £8,911,407.90 across 4,338 customers. Cohort retention is not included in the dashboard because it is covered in the SQL results (`12_cohort_retention.csv`).
 
